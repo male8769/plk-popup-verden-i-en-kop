@@ -1,8 +1,9 @@
+/* Popup layout */
 section#popup-kaffe-container {
-  position: fixed;      /* skift fra relative til fixed */
-  top: 50%;             /* centrer lodret */
-  left: 50%;            /* centrer horisontalt */
-  transform: translate(-50%, -50%); /* flyt elementet så det er perfekt centreret */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: #092D2B;
   padding-bottom: 0;
   width: 800px;
@@ -13,6 +14,7 @@ section#popup-kaffe-container {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* Close button */
 button.popupCloseButton {
   position: absolute !important;
   right: 0.5rem !important; 
@@ -28,7 +30,7 @@ button.popupCloseButton {
   padding: 0 !important;
 }
 
-
+/* Text style */
 #popup-kaffe-container h6,
 #popup-kaffe-container .kaffe-header,
 #popup-kaffe-container p,
@@ -42,27 +44,25 @@ button.popupCloseButton {
   margin-top: 1rem !important;
 }
 
-
-
-/* Wrapper rundt om de to billeder for at sikre overlap */
+/* Image wrapper */
 .kaffe-cup-image {
   position: relative;
-  width: 690px;  /*saml bredden */
-  height: 690px;  /*fast højde svarende til billede*/
+  width: 690px;
+  height: 690px;
   margin: 2rem auto 1.5rem auto;
 }
 
-/* Sørg for at plk-planeten-i-kop ligger i baggrunden */
+/* Planet image background */
 .kaffe-cup-image img[src*="plk-planeten-i-kop.png"] {
   position: absolute;
   top: -8rem;
   left: 11rem;
   z-index: 1;
   width: 27rem;
-  height:auto;
+  height: auto;
 }
 
-/* plk-kaffe ligger ovenpå planeten */
+/* Coffee image foreground */
 .kaffe-cup-image img[src*="plk-kaffe.png"] {
   position: absolute;
   top: -6rem;
@@ -72,6 +72,7 @@ button.popupCloseButton {
   height: auto;
 }
 
+/* People image top layer */
 .kaffe-personer img[src*="plk-mennesker.png"] {
   position: absolute;
   top: 19.65rem;
@@ -81,13 +82,13 @@ button.popupCloseButton {
   height: auto;
 }
 
+/* Mobile adjustments */
 @media (max-width: 600px) {
   button.popupCloseButton {
     top: 5rem !important;
     left: 50% !important;
     right: auto !important;
-    transform: translateX(-50%) !important; /* centrerer knappen horisontalt */
+    transform: translateX(-50%) !important;
     font-size: 3rem !important;
   }
 }
-
