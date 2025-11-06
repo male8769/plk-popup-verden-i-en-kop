@@ -1,0 +1,93 @@
+section#popup-kaffe-container {
+  position: fixed;      /* skift fra relative til fixed */
+  top: 50%;             /* centrer lodret */
+  left: 50%;            /* centrer horisontalt */
+  transform: translate(-50%, -50%); /* flyt elementet så det er perfekt centreret */
+  background: #092D2B;
+  padding-bottom: 0;
+  width: 800px;
+  height: 580.5px;
+  text-align: center;
+  z-index: 1000;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+button.popupCloseButton {
+  position: absolute !important;
+  right: 0.5rem !important; 
+  top: 0.5rem !important;
+  font-size: 3rem !important;  
+  cursor: pointer !important;
+  z-index: 2147483648 !important;
+  color: #fff !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  line-height: 1 !important; 
+  padding: 0 !important;
+}
+
+
+#popup-kaffe-container h6,
+#popup-kaffe-container .kaffe-header,
+#popup-kaffe-container p,
+#popup-kaffe-container span,
+#popup-kaffe-container div {
+  color: #fff !important;
+  font-family: 'Bebas Neue', Arial, sans-serif !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+  font-size: 60px !important;
+  margin-top: 1rem !important;
+}
+
+
+
+/* Wrapper rundt om de to billeder for at sikre overlap */
+.kaffe-cup-image {
+  position: relative;
+  width: 690px;  /*saml bredden */
+  height: 690px;  /*fast højde svarende til billede*/
+  margin: 2rem auto 1.5rem auto;
+}
+
+/* Sørg for at plk-planeten-i-kop ligger i baggrunden */
+.kaffe-cup-image img[src*="plk-planeten-i-kop.png"] {
+  position: absolute;
+  top: -8rem;
+  left: 11rem;
+  z-index: 1;
+  width: 27rem;
+  height:auto;
+}
+
+/* plk-kaffe ligger ovenpå planeten */
+.kaffe-cup-image img[src*="plk-kaffe.png"] {
+  position: absolute;
+  top: -6rem;
+  left: 13rem;
+  z-index: 2;
+  width: 16.4rem;
+  height: auto;
+}
+
+.kaffe-personer img[src*="plk-mennesker.png"] {
+  position: absolute;
+  top: 19.65rem;
+  left: 6rem;
+  z-index: 3;
+  width: 600px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  button.popupCloseButton {
+    top: 5rem !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important; /* centrerer knappen horisontalt */
+    font-size: 3rem !important;
+  }
+}
+
