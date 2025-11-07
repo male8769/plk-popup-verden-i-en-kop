@@ -8,11 +8,6 @@ Formålet med mit plugin var at skabe noget interessant, som gjorde det mere sp�
 
 Derudover har jeg designet de tre personer i plugin'et ud fra Peter Larsen Kaffes egen visuelle stil, så der er en tydelig sammenhæng. Det samme gælder valget af font og baggrundsfarve i plugin'et. Mit overordnede mål var, at det skulle ligne noget, Peter Larsen Kaffe selv kunne have lavet.
 
-her er alle elementerne hver for sig
-
-![en kop kaffe](img/plk-planeten-i-kop.png)
-![kaffe](img/plk-kaffe.png)
-![peter larsen kaffe mennesker](img/plk-mennesker.png)
 ___
 ## Opbygning af HTML, CSS, JS og PHP
 
