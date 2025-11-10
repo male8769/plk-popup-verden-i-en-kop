@@ -76,6 +76,9 @@ ___
 
 Mit plugin aktiveres via shortcoden `[show-plk-popup-verden-i-en-kop]`, som jeg har registreret i koden. Når man indsætter denne shortcode i en side eller et indlæg, kaldes en funktion automatisk, som indsætter popup’ens HTML. Det gør det nemt at vise popup’en hvor som helst uden at ændre i temaets filer. Shortcodes gør det altså enkelt at tilføje dynamisk indhold via en simpel tekstkode.
 
+___
+
+## Kilder
 
 Kilde:
 OpenAI, 2024. hjælp med kode  [online] Fundet på: [hjælp med kode](https://www.perplexity.ai/search/hjaelp-med-kode-epnIaWAeSHW3WocJTQ42Vw#12) [set 31-10-2025]
